@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Ruby String Methods - Palindrome"
-date:       2018-12-02 22:26:09 +0000
+date:       2018-12-02 17:26:10 -0500
 permalink:  ruby_string_methods_-_palindrome
 ---
 
@@ -34,7 +34,7 @@ Let's look closely in the parentheses.
 * `\! `   removes exclamation mark
 * `\- `   removes hyphen
 
-We put all the above in the array and wrap with backslash `/  /`. <br>
+We put all the above in the array and wrap with forward slash `/  /`. <br>
 After the comma is a replacement. In this case,  non-space `""` .
 
 Let's say we pass the string "abc! c B,a". 
