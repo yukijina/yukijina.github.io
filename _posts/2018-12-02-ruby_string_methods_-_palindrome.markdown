@@ -15,7 +15,7 @@ What is palindrome?
 e.g.  abccba, madam
 
 <br>
-We pass one argument - string - and then check if the string is palindrome. 
+We pass one argument - string - and then check if the string is palindrome. <br>
 My approach is:
 1. divide the string to two
 2. if the first and the second divided half are the same strings, it is palindrome.
