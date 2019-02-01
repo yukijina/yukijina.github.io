@@ -25,50 +25,52 @@ Here is the site that  I used for this project.<br>
 Bundler can install gems and tracks its version. Bundle is not only managing Rubygems dependencies but also we can create our own Bundler.</p>
 
 <p>To check bundle, run the following code in the terminal. <p>
-`bundle -v `
+<code>&lt;bundle -v&gt;</code>
 
 <p>If it is already installed,  let's create own bundle gem.</p>
-`bundle gem wholefoods_recipe`
+<code>&lt;bundle gem wholefoods_recipe&gt;</code>
 
-<p>I named it as `wholefoods_recipe` according to my project but you can assign any name here.</p>
+<p>I named it as <code>&lt;wholefoods_recipe&gt;</code> according to my project but you can assign any name here.</p>
 
 <p>Now bin and lib directory, gem, gitnote, READ.md and other files were already created. This is pretty cool!! </p>
 
 <h3>.gemspec file</h3>
-We need to update `spec.summery`,`spec.description` and `spec.homepage`. I also added `gem 'pry'` and `gem 'nokogiri'` at this point. Run `bundle` in the terminal if everything works okay.
+<p>We need to update <code>&lt;spec.summery&gt;</code>,<code>&lt;spec.description&gt;</code> and <code>&lt;spec.homepage&gt;</code>. I also added <code>&lt;gem 'pry'&gt;</code> and <code>&lt;gem 'nokogiri'&gt;</code> at this point. Run <code>&lt;bundle&gt;</code> in the terminal if everything works okay.</p>
 
 <h3>class and cli files</h3>
-I also like to create some files at the beginning. I definitely needed files for:
+<p>I also like to create some files at the beginning. I definitely needed files for:</p>
 
-* cli.rb - CLI controller, interact with users
-* scraper.rb - scrape data from website
-* category.rb - class file, assign attribute
+<ul>
+<li>cli.rb - CLI controller, interact with users</li>
+<li>scraper.rb - scrape data from website</li>
+<li>category.rb - class file, assign attribute</li>
+</ul>
 
-These are minimum files I created at first but I created more class files to define methods from different pages later.
+<p>These are minimum files I created at first but I created more class files to define methods from different pages later.</p>
 
 <h3>Executable file</h3>
-`bin` -  This is executable directory.
+<p><code>&lt;bin&gt;</code> -  This is executable directory.</p>
 
 <p>Inside this bin directory, I created new file which is my main executable file.</p>
- `bin/wholefoods_recipe`
+ <code>&lt;bin/wholefoods_recipe&gt;</code>
 
 <p>In this executable file, I need to write the following code on top of the page because the file does not have extension. We need computer to read collectly - this is ruby file.</p>
-`#!/usr/bin/env ruby`
+<code>&lt;#!/usr/bin/env ruby`
 
 <p>Underneath of this code, I wrote lib directory path, that is our environment file.</p>
-`require_relative "../lib/wholefoods_recipe"`
+<code>&lt;require_relative "../lib/wholefoods_recipe"&gt;</code>
 
-<p>Note: `lib` is not located in the same directory so we need to use two dots `../lib` . If it is in the same directory, we can use just one dot.</p>
+<p>Note: <code>&lt;lib&gt;</code> is not located in the same directory so we need to use two dots <code>&lt;../lib&gt;</code> . If it is in the same directory, we can use just one dot.</p>
 
 <h3>Environment file</h3>
-`lib/wholefoods_recipe`
+<code>&lt;lib/wholefoods_recipe&gt;</code>
 
 <p>This is my environment file and I wrote all the file paths in this folder :</p>
 
 <p>i.e<br>
-`require_relative "./wholefoods_recipe/cli"`<br>
-`require_relative "./wholefoods_recipe/category"`<br>
-`require_relative "./wholefoods_recipe/scraper"`<br></p>
+<code>&lt;require_relative "./wholefoods_recipe/cli"&gt;</code><br>
+<code>&lt;require_relative "./wholefoods_recipe/category"&gt;</code><br>
+<code>&lt;require_relative "./wholefoods_recipe/scraper"&gt;</code></p>
 
 <h3>My Class files</h3>
 I ended up creating cli, scraper and other three class files - total 5 files.
@@ -77,27 +79,28 @@ I ended up creating cli, scraper and other three class files - total 5 files.
 In scraper.rb, I scraped text and url from website using Nokogiri. Nokogiri is an open source library to parser XML/HTML in Ruby. It was very very fun part for me when I finally get the data from website. I like it.
 
 <h4>category.rb</h4>
-This is a class file to initialize with arguments scraped in scraper.rb. I assigned attribute and stored information in class variable. I grabed title and url from the first page of the website - recipe category.
+This is a class file to initialize with arguments scraped in scraper.rb. I assigned attribute and stored information in class variable. I grabbed title and url from the first page of the website - recipe category.
 
 <h4>recipes.rb</h4>
 This is also a class file. Recipe name and url were pulled from the second page of the website - recipe collection.
 
 <h4>recipe.rb</h4>
-This class file is for individual recipe. I scraped name, description and ingredients from the third page of the website - recipe.
+<p>This class file is for individual recipe. I scraped name, description and ingredients from the third page of the website - recipe.</p>
 
-So there are three levels - category - recipes(recipe collection) - recipe(individual recipe).
-These three files - category.rb, recipes.rb, recipe.rb  - have almost the same format but each attribute value is different because the arguments were scraped from the different website pages.  
+<p>So there are three levels - category - recipes(recipe collection) - recipe(individual recipe).</p>
+<p>These three files - category.rb, recipes.rb, recipe.rb  - have almost the same format but each attribute value is different because the arguments were scraped from the different website pages. </p>
 
-The object (argument) is instantiated in scraper.rb.
+<p>The object (argument) is instantiated in scraper.rb.</p>
 
 <h4>cli.rb</h4>
-This is the file to interact with users and to work all together.
+<p>This is the file to interact with users and to work all together.</p>
 
-Interesting thing for me is CLI is not just providing information to users but also it can get the input result from users and pass it as argument so that we can instantiate in another files. That was my big "wow" moment. It is not just one way to give information to users but also provide another information based on what we received from users or what users want to know. It interacts with users indeed.
+<p>Interesting thing for me is CLI is not just providing information to users but also it can get the input result from users and pass it as argument so that we can instantiate in another files. That was my big "wow" moment. It is not just one way to give information to users but also provide another information based on what we received from users or what users want to know. It interacts with users indeed.</p>
 
 <h2>Final look</h2>
-Let's look at my final interface together!<br>
-Run `./bin/wholefoods_recipe`
+<p>Let's look at my final interface together!<br>
+Run <code>&lt;./bin/wholefoods_recipe&gt;</code></p>
+
 <img src="../img/myimg/cli1.png">
 <!-- ![cli project image](http://yukijina.github.io/img/myimg/cli1.png) -->
 
@@ -119,22 +122,22 @@ Type the number you like!</p>
 <img src="../img/myimg/cli4.png">
 <!-- ![cli project image](http://yukijina.github.io/img/myimg/cli4.png) -->
 
-Tada! We can see recipe name, description and ingredients. Isn't it cool!?
+<p>Tada! We can see recipe name, description and ingredients. Isn't it cool!?</p>
 <img src="../img/myimg/cli5.png">
 <!-- ![cli project image](http://yukijina.github.io/img/myimg/cli5.png) -->
 
-If you wants to see another recipe, you can type "y" and go back to the previous list.
+<p>If you wants to see another recipe, you can type "y" and go back to the previous list.</p>
 <img src="../img/myimg/cli6.png">
 <!-- ![cli project image](http://yukijina.github.io/img/myimg/cli6.png) -->
 
-If not, it exits.
+<p>If not, it exits.</p>
 <img src="../img/myimg/cli7.png">
 <!-- ![cli project image](http://yukijina.github.io/img/myimg/cli7.png) -->
 
 <br>
 <h2>Conclusion</h2>
-<p>At the beginning of this project, I was only able to scrape the first level - I mean the first web page. I had a problem to understand how to provide another information using the class method and attribute value  I created. It didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another date using that object. That object was url for the second page. Oh wow! Now I can scrape what a user exactly wants because we pass user's input to argument. At this point, I was able to grab data for the following pages and It continuously flows beautifully.</p>
+<p>At the beginning of this project, it didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another date using that object. That object was url for the second page. Oh wow! Now I can scrape what a user exactly wants because we pass user's input to argument. At this point, I was able to grab data for the following pages and It continuously flows beautifully.</p>
 
 <p>I also found that websites do not have the exact same HTML every page. Probably many sites usually have? I am not sure at this point but in this website, each page looks exactly same but some pages have different HTML tag or class name, which brake the code if I did not scrape correctly. It was interesting.</p>
 
-<p>I learned a lot through this project but at the same time, I really enjoyed it! I can't believe that I didn't understand how to collaborate each class file a month ago. Learning is so much fun if I understand.  Coding makes me awake and even lift my mood up. I want to thank to my mentors and Flatiron community. They always help me how to figure out! This is not yet the final project, actually it is still the beginning,  but I feel appreciated.</p>
+<p>I learned a lot through this project but at the same time, I really enjoyed it! Learning is so much fun if I understand. Coding makes me awake and even lift my mood up.</p>
