@@ -25,14 +25,10 @@ Here is the site that  I used for this project.<br>
 Bundler can install gems and tracks its version. Bundle is not only managing Rubygems dependencies but also we can create our own Bundler.</p>
 
 <p>To check bundle, run the following code in the terminal. <p>
-```
-bundle -v
-```
+`bundle -v`
 
 <p>If it is already installed,  let's create own bundle gem.</p>
-```
-bundle gem wholefoods_recipe
-```
+`bundle gem wholefoods_recipe`
 
 <p>I named it as `wholefoods_recipe` according to my project but you can assign any name here.</p>
 
@@ -54,24 +50,18 @@ These are minimum files I created at first but I created more class files to def
 `bin` -  This is executable directory.
 
 <p>Inside this bin directory, I created new file which is my main executable file.</p>
- ```
- bin/wholefoods_recipe
- ```
+ `bin/wholefoods_recipe`
 
 <p>In this executable file, I need to write the following code on top of the page because the file does not have extension. We need computer to read collectly - this is ruby file.</p>
 `#!/usr/bin/env ruby`
 
 <p>Underneath of this code, I wrote lib directory path, that is our environment file.</p>
-```
-require_relative "../lib/wholefoods_recipe"
-```
+`require_relative "../lib/wholefoods_recipe"`
 
 <p>Note: `lib` is not located in the same directory so we need to use two dots `../lib` . If it is in the same directory, we can use just one dot.</p>
 
 <h4>Environment file</h4>
-```
-lib/wholefoods_recipe
-```
+`lib/wholefoods_recipe`
 
 <p>This is my environment file and I wrote all the file paths in this folder :</p>
 
@@ -108,33 +98,38 @@ Interesting thing for me is CLI is not just providing information to users but a
 <h3>Final look</h3>
 Let's look at my final interface together!<br>
 Run `./bin/wholefoods_recipe`
-![cli project image](http://yukijina.github.io/img/myimg/cli1.png)
+<img src="../img/myimg/cli1.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli1.png) -->
 
 
 <p>Let's type "list" to see recipe categories.</p>
 <p>List is like this: </p>
-![cli project image](http://yukijina.github.io/img/myimg/cli2.png)
+<img src="../img/myimg/cli2.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli2.png) -->
 
 <p>There are 119 categories!</p>
-
-![cli project image](http://yukijina.github.io/img/myimg/cli3.png)
+<img src="../img/myimg/cli3.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli3.png) -->
 
 
 <p>Interested in one of these categories?? <br>
 Type the number you like!</p>
 <p>Let's type 119 this time. Now we can see the recipe list of "119. Surprising Sandwiches" below.</p>
 <p> Pick the recipe you are curious about and type the number.</p>
-
-![cli project image](http://yukijina.github.io/img/myimg/cli4.png)
+<img src="../img/myimg/cli4.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli4.png) -->
 
 Tada! We can see recipe name, description and ingredients. Isn't it cool!?
-![cli project image](http://yukijina.github.io/img/myimg/cli5.png)
+<img src="../img/myimg/cli5.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli5.png) -->
 
 If you wants to see another recipe, you can type "y" and go back to the previous list.
-![cli project image](http://yukijina.github.io/img/myimg/cli6.png)
+<img src="../img/myimg/cli6.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli6.png) -->
 
 If not, it exits.
-![cli project image](http://yukijina.github.io/img/myimg/cli7.png)
+<img src="../img/myimg/cli7.png">
+<!-- ![cli project image](http://yukijina.github.io/img/myimg/cli7.png) -->
 
 
 <h2>Conclusion</h2>
