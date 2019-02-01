@@ -55,10 +55,10 @@ Bundler can install gems and tracks its version. Bundle is not only managing Rub
  <code>&lt;bin/wholefoods_recipe&gt;</code>
 
 <p>In this executable file, I need to write the following code on top of the page because the file does not have extension. We need computer to read collectly - this is ruby file.</p>
-<code>&lt;#!/usr/bin/env ruby`
+&lt;#!/usr/bin/env ruby&gt;
 
 <p>Underneath of this code, I wrote lib directory path, that is our environment file.</p>
-<code>&lt;require_relative "../lib/wholefoods_recipe"&gt;</code>
+<code>require_relative "../lib/wholefoods_recipe"</code>
 
 <p>Note: <code>&lt;lib&gt;</code> is not located in the same directory so we need to use two dots <code>&lt;../lib&gt;</code> . If it is in the same directory, we can use just one dot.</p>
 
