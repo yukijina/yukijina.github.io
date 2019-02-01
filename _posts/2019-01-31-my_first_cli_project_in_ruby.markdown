@@ -95,7 +95,7 @@ This is the file to interact with users and to work all together.
 
 Interesting thing for me is CLI is not just providing information to users but also it can get the input result from users and pass it as argument so that we can instantiate in another files. That was my big "wow" moment. It is not just one way to give information to users but also provide another information based on what we received from users or what users want to know. It interacts with users indeed.
 
-<h2>Final look</h3>
+<h2>Final look</h2>
 Let's look at my final interface together!<br>
 Run `./bin/wholefoods_recipe`
 <img src="../img/myimg/cli1.png">
