@@ -79,11 +79,11 @@ I ended up creating cli, scraper and other three class files - total 5 files.
 <br>
 
 <h4>&#10033; scraper.rb</h4>
-In scraper.rb, I grabbed the data such as text and URL from the web pages using Nokogiri. Nokogiri is an open source library to parse XML/HTML in Ruby. It was very fun when I finally obtain the data from the website.
+I scraped data such as text and URL from the web pages using Nokogiri. Nokogiri is an open source library to parse XML/HTML in Ruby. It was very fun when I finally obtain the data from the website.
 <br>
 
 <h4>&#10033; category.rb</h4>
-This is a class file to initialize with arguments that are scraped in scraper.rb. I assigned attribute and stored each instance in a class variable. I grabbed the title and URL from the first page of the website - recipe category.
+This is a class file. Title and URL are scraped from the first page of the website - in scraper.rb. Those data was passed through argument - category.
 <br>
 
 <h4>&#10033; recipes.rb</h4>
@@ -141,7 +141,7 @@ Pick the recipe you are curious about and type the number.
 
 <br>
 <h2>Conclusion</h2>
-<p>At the beginning of this project, each file didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another data using that object. That object was URL for the second page. Oh wow! Now I can scrape what the user exactly wants because we pass user's input to the argument. The flow is beautiful.</p>
+<p>At the beginning of this project, each file didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another data using that object. That object was URL for the second page. Oh wow! Now I can scrape what the user exactly wants because we pass user's input to the argument. Beautiful.</p>
 
 <p>I also found that some web pages do not have the exact same HTML every page. Each page looks exactly the same but some pages have different HTML tag or class name, which brake the code if I did not scrape correctly. It was interesting but challenging.</p>
 
