@@ -83,15 +83,15 @@ I scraped data such as text and URL from the web pages using Nokogiri. Nokogiri 
 <br>
 
 <h4>&#10033; category.rb</h4>
-This is a class file. Title and URL are scraped from the first page of the website - in scraper.rb. Those data was passed through argument - category.
+This is a class file. Title and URL are scraped from the first page of the website. The data is passed through argument.
 <br>
 
 <h4>&#10033; recipes.rb</h4>
-This is also a class file. Recipe name and URL were scraped from the second page of the website - recipe collection.
+This is also a class file. Recipe name and URL were scraped from the second page of the website.
 <br>
 
 <h4>&#10033; recipe.rb</h4>
-This class file is for an individual recipe. I scraped name, description, and ingredients from the third page of the website - recipe.
+This class file is for an individual recipe. I scraped name, description, and ingredients from the third page of the website.
 
 <p>So there are three levels - category - recipes(recipe collection) - recipe(individual recipe).</p>
 <p>These three files - category.rb, recipes.rb, recipe.rb  - have almost the same formats but each property is different because the arguments were scraped from the different website pages. The object is instantiated in scraper.rb.</p>
