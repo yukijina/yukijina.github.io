@@ -7,23 +7,23 @@ permalink:  my_first_cli_project_in_ruby
 
 I am writing about my first CLI - Command Line Interface -  project in Ruby.
 
-To build the program, we need to create a gem, environment directory and multiple files for classes from scratch. All needs to collaborate with to make CLI work beautifully.
+To build the application, we need to create a gem, environment/executable/class files from scratch. We need to know how each file collaborates well in order to make CLI work beautifully.
 
-I was so excited but at the same time I felt a bit scared if I can make it work!
+I was so excited but at the same time, I felt a bit scared if I can make it work.
 But it turned out it was so much fun to build the program and actually it was even addictive.
 
 ## Whole Foods Market Recipe Collection
 I used a website from the Whole Foods Market Recipe Collection. They have a bunch of recipes on their website.<br>
 
-Here is the site that I used for this project.<br>
+Whole Foods website that I used for this project.<br>
 [http://www.wholefoodsmarket.com/recipe-collections](http://www.wholefoodsmarket.com/recipe-collections)
 
 
-<h2>Process making CLI</h2>
+<h2>Process making a CLI</h2>
 Let's go through how to start a CLI project.
 <br>
-<p>To get started, we need bundler installed in our computer.<br>
-Bundler can install gems and tracks its version. Bundle is not only managing Rubygems dependencies but also we can create our own Bundler.</p>
+<p>To get started, we need to install a bundler in our computer.<br>
+Bundler can install gems and tracks its version. It is not only managing Ruby gems dependencies but also we can create our own Bundler.</p>
 
 <p>To check if you have a bundle, run the following code in the terminal. <p>
 <code>bundle -v</code>
@@ -31,7 +31,7 @@ Bundler can install gems and tracks its version. Bundle is not only managing Rub
 <p>If it is already installed, let's create own bundle gem.</p>
 <code>bundle gem wholefoods_recipe</code>
 
-<p>I named it as <code>wholefoods_recipe</code> according to my project/application but we can assign any name.</p>
+<p>I named it as <code>wholefoods_recipe</code> based on my project but we can assign any name.</p>
 
 <p>Now bin and lib directory, gemfile, gitignore, README.md, and other files were already created. This is pretty cool!! </p>
 
@@ -49,7 +49,7 @@ I also liked to create some files at the beginning. I definitely needed files fo
 <li>category.rb - class file, assign attribute</li>
 </ul>
 
-<p>These are minimum files I created at first but I did more class files to define methods from different pages later.</p>
+<p>These are minimum files I created at first but I created more class files to define methods from different pages later.</p>
 
 <h3>Executable file</h3>
 <code>bin</code> -  This is executable directory.
@@ -57,7 +57,7 @@ I also liked to create some files at the beginning. I definitely needed files fo
 <p>Inside this bin directory. Let's create a new file which is going to be my main executable file.</p>
  <code>bin/wholefoods_recipe</code>
 
-<p>In this executable file, I have to write the following code on top of the page because the file does not have extension. I want to set my environment to ruby. It is called "shebang"</p>
+<p>In this executable file, I have to write the following code on top of the page because the file does not have an extension. I want to set my environment to ruby. It is called "shebang"</p>
 <code>#!/usr/bin/env ruby</code>
 
 <p>Underneath of this code, I wrote lib directory path, that is my environment file.</p>
@@ -79,11 +79,11 @@ I ended up creating cli, scraper and other three class files - total 5 files.
 <br>
 
 <h4>&#10033; scraper.rb</h4>
-In scraper.rb, I grabbed the data such as text and URL from the web pages using Nokogiri. Nokogiri is an open source library to parse XML/HTML in Ruby. It was very fun when I finally obtain the data from the website. I like it.
+In scraper.rb, I grabbed the data such as text and URL from the web pages using Nokogiri. Nokogiri is an open source library to parse XML/HTML in Ruby. It was very fun when I finally obtain the data from the website.
 <br>
 
 <h4>&#10033; category.rb</h4>
-This is a class file to initialize with arguments that are data scraped in scraper.rb. I assigned attribute and stored information in a class variable. I grabbed the title and URL from the first page of the website - recipe category.
+This is a class file to initialize with arguments that are scraped in scraper.rb. I assigned attribute and stored each instance in a class variable. I grabbed the title and URL from the first page of the website - recipe category.
 <br>
 
 <h4>&#10033; recipes.rb</h4>
@@ -94,7 +94,7 @@ This is also a class file. Recipe name and URL were scraped from the second page
 This class file is for an individual recipe. I scraped name, description, and ingredients from the third page of the website - recipe.
 
 <p>So there are three levels - category - recipes(recipe collection) - recipe(individual recipe).</p>
-<p>These three files - category.rb, recipes.rb, recipe.rb  - have almost the same format but each attribute value is different because the arguments were scraped from the different website pages. The object (argument) is instantiated in scraper.rb.</p>
+<p>These three files - category.rb, recipes.rb, recipe.rb  - have almost the same formats but each property is different because the arguments were scraped from the different website pages. The object is instantiated in scraper.rb.</p>
 <br>
 
 <h4>&#10033; cli.rb</h4>
@@ -141,8 +141,8 @@ Pick the recipe you are curious about and type the number.
 
 <br>
 <h2>Conclusion</h2>
-<p>At the beginning of this project, each file didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another data using that object. That object was URL for the second page. Oh wow! Now I can scrape what the user exactly wants because we pass user's input to the argument.It flows beautifully.</p>
+<p>At the beginning of this project, each file didn't collaborate well but my mentor gave me a hint that "we can pass the object (user's input) to argument and scrape another data using that object. That object was URL for the second page. Oh wow! Now I can scrape what the user exactly wants because we pass user's input to the argument. The flow is beautiful.</p>
 
 <p>I also found that some web pages do not have the exact same HTML every page. Each page looks exactly the same but some pages have different HTML tag or class name, which brake the code if I did not scrape correctly. It was interesting but challenging.</p>
 
-<p>I learned a lot through this project but at the same time, I really enjoyed it! Learning is so much fun if I understand. Coding makes me awake and even lift my mood up &#9786;</p>
+<p>I learned a lot through this project but at the same time, I really enjoyed it! Learning is fun. Coding makes me awake and even lift my mood up &#9786;</p>
