@@ -13,3 +13,4 @@ When we make columun using `.col` , each column has default horizontal padding (
 
 Here is my experiment:
 
+<img src="../img/myimg/bootstrap-grid.png" alt="grid image">
