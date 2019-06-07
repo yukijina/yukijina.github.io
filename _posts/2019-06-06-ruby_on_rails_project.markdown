@@ -15,13 +15,13 @@ Users must sign up/log in. Users can create their own checklists, which include 
 
 Model:
 User
-[User Model](https://yukijina.github.io/img/myimg/rails-user-model.png)
+![User Model](https://yukijina.github.io/img/myimg/rails-user-model.png)
 Company
-[Company Model](https://yukijina.github.io/img/myimg/rails-company-model.png)
+![Company Model](https://yukijina.github.io/img/myimg/rails-company-model.png)
 Position
-[Position Model](https://yukijina.github.io/img/myimg/rails-position-model.png)
+![Position Model](https://yukijina.github.io/img/myimg/rails-position-model.png)
 Checklist
-[Checklist Model](https://yukijina.github.io/img/myimg/rails-checklist-model.png)
+![Checklist Model](https://yukijina.github.io/img/myimg/rails-checklist-model.png)
 
 
 I also added admin attribute to User. Only admin can edit the company and position after they were created.
@@ -31,4 +31,4 @@ One of the most challenging parts was associations between tables, and what kind
 
 In the real world, there are a lot of options and information. We could add as much as information we like but we do not need to provide all the options, just need to abstract and think about what kind of information users want and we want to keep in the database.
 
-This project was essential for expanding my experiences and increasing my knowledge. I enjoyed building a web application through th project. True -  Ruby on Rails is magic. Keep it up!
+This project was essential for expanding my experiences and increasing my knowledge. I enjoyed building a web application through the project. True -  Ruby on Rails is magic. Keep it up!
