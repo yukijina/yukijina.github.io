@@ -36,4 +36,4 @@ One of the most challenging parts was associations between tables, and what kind
 
 In the real world, there are a lot of options and information. We could add as much as information we like but we do not need to provide all the options, just need to abstract and think about what kind of information users want and we want to keep in the database.
 
-This project was essential for expanding my experiences and increasing my knowledge. I enjoyed building a web application through the project. True -  Ruby on Rails is magic. Keep it up!
+I definitely feel this project was essential for expanding my experiences and increasing my knowledge. I enjoyed Rails magic and understanding and utilizing the magic is fun way to build a web application. 
