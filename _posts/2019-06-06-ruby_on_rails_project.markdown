@@ -24,7 +24,7 @@ Position
 ![Position Model](/img/myimg/rails-position-model.png)
 
 Checklist
-![Checklist Model](/img/myimg/rails-checklist-model.png)
+![Checklist Model](/img/myimg/rails-cheklist-model.png)
 
 
 I also added admin attribute to User. Only admin can edit the company and position after they were created.
