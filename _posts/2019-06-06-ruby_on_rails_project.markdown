@@ -15,7 +15,7 @@ Users must sign up/log in. Users can create their own checklists, which include 
 
 Model:
 User
-![User Model](https://yukijina.github.io/img/myimg/rails-user-model.png)
+![User Model](/img/myimg/rails-user-model.png)
 Company
 ![Company Model](https://yukijina.github.io/img/myimg/rails-company-model.png)
 Position
