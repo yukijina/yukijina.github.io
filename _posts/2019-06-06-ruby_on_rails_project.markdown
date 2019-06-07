@@ -13,15 +13,18 @@ About my project:
 The project title is "Job search organizer" !
 Users must sign up/log in. Users can create their own checklists, which include information about companies and positions users added,  and also users can track the process of the job application. A resume was sent? Or Interview was done? Tracking your application sounds convenient.
 
-Model:
+### Model:
 User
 ![User Model](/img/myimg/rails-user-model.png)
+
 Company
-![Company Model](https://yukijina.github.io/img/myimg/rails-company-model.png)
+![Company Model](/img/myimg/rails-company-model.png)
+
 Position
-![Position Model](https://yukijina.github.io/img/myimg/rails-position-model.png)
+![Position Model](/img/myimg/rails-position-model.png)
+
 Checklist
-![Checklist Model](https://yukijina.github.io/img/myimg/rails-checklist-model.png)
+![Checklist Model](/img/myimg/rails-checklist-model.png)
 
 
 I also added admin attribute to User. Only admin can edit the company and position after they were created.
