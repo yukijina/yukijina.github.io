@@ -8,16 +8,16 @@ permalink:  sinatra_project
 
 It's time to make a web application!
 
-Sign up, log in, log out - most of the websites have a natural flow to view one page after another. 
-For example - Facebook , nobody wants other users to edit, delete and create his/her own posts. That is obvious when we visit any web application every day but I was surprised that creating this logic and RESTful route was moew complicated than I imagined. 
+Sign up, log in, log out - most of the websites have a natural flow to view one page after another.
+For example - Facebook , nobody wants other users to edit, delete and create his/her own posts. That is obvious when we visit any web application every day but I was surprised that creating this logic and RESTful route was more complicated than I imagined.
 
 However, as always, when you understand the logic, fun time begins.
 
 ## What I learned through the project:
-The key is to *make a blueprint *first. I found it was definitely helpful to write down what kind of application I want to create. As Avi always explains in his video lecture, I decided to note the structure and ideas before programming. 
+The key is to *make a blueprint *first. I found it was definitely helpful to write down what kind of application I want to create. As Avi always explains in his video lecture, I decided to note the structure and ideas before programming.
 
 1. What kind of tables/database I want to create.
-2. A relationship between tables - and how many Models 
+2. A relationship between tables - and how many Models
 3. What kind of routes are needed
 4. What kind of page the route renders. Or redirects to the other route?
 
@@ -84,27 +84,19 @@ My project is creating a fictional Brewery club application with Sinatra. A brew
 
 ##### 7 RESTful routes :
 There is 7 restful routes pattern to follow when creating an application.
- 
+
 REST(representational Stat Transfer) provides mapping HTTP verbs and CRUD (create, read, update, delete) actions.
 
 ![grid sytem](http://yukijina.github.io/img/myimg/route.png)
 <!-- <img src="../img/myimg/route.png" alt="RESTful route"> -->
 
 
-If I follow these routes, everthing should be in a good flow.
-That is all the notes I wrote before building the application. 
+If I follow these routes, everything should be in a good flow.
+That is all the notes I wrote before building the application.
 
-I was able to focus on programming based on the blueprint. 
-I can see the goal clearly and know what I want to do next. It gives me focus and direction. I already know what routes I want to create and what kind of templates I want to render. What I need to think is writing ruby and html/css. I don't need to think again and again for what kind of method or route I am supposed to use next. 
+I was able to focus on programming based on the blueprint.
+I can see the goal clearly and know what I want to do next. It gives me focus and direction. I already know what routes I want to create and what kind of templates I want to render. What I need to think is writing ruby and html/css. I don't need to think again and again for what kind of method or route I am supposed to use next.
 
-The blueprint should not be perfect. We can always add additional functions and change for the better ideas. Creating a note at the beginning is not only to make your mind clear but also it is exciting because you can picture what kind of application you want. 
+The blueprint should not be perfect. We can always add additional functions and change for the better ideas. Creating a note at the beginning is not only to make your mind clear but also it is exciting because you can picture what kind of application you want.
 
 It is like a vision board and it can set a goal.  
-
-
-
-
-
-
-
-
