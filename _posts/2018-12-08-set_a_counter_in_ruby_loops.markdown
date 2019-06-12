@@ -9,7 +9,7 @@ Loops are used to execute the same block of code a specific number of times. If 
 
 My question was "should I write a counter before or after `puts` message? "
 
-Well.. it depends or doen't matter. <br>
+Well.. it depends or doesn't matter. <br>
 But it made me confused.
 
 At the end of challenge, I found both ways worked so I kept going.
@@ -44,7 +44,7 @@ end
 
 `result --> 1,2,3,4,5`
 
-First output is `1`, not 0.  `j` is incremented just before `puts` message. 
+First output is `1`, not 0.  `j` is incremented just before `puts` message.
 When `j = 4`, it increments by 1, outputs `5` and executes.
 
 <br>
@@ -53,7 +53,7 @@ Return value changes by writing counter before or after `puts`.
 
 In the case 2, I thought it would not output `5` . Because it is supposed to be less than 5!?  I was confused when it outputs `5` . But that's right, if I look the code carefully, it makes sense. It does not mean greater than 5 but simply `puts` is wrote after the counter is incremented.
 
-By the way, if we don't output counter, we may not realize the difference. 
+By the way, if we don't output counter, we may not realize the difference.
 Let's say we want to output message `I love Ruby!` in both case1 and case 2. Both outputs message 5 times and we have the same results like:
 
 
@@ -96,5 +96,5 @@ end
 I had another belief that it only outputs 5 times either we use `< 5` or `<=5`. But if we understand case 1 and case 2, we know that is not true.
 <br>
 <br>
-It was fun to test codes. 
+It was fun to test codes.
 When I finally understand the difference, it makes me happy :)
