@@ -6,19 +6,19 @@ permalink:  coding_habits_and_life_balance
 ---
 
 
-It's been about 10 weeks since I started a part-time online software engineering course. How does it affect my life? 
-Oh well, it already gives me a lot of thought and I am discovering new things and new parts of me every day. 
+It's been about 10 weeks since I started a part-time online software engineering course. How does it affect my life?
+Oh well, it already gives me a lot of thought and I am discovering new things and new parts of me every day.
 
 ## Discipline
 I am taking a part-time course because I wanted to keep my job for my living, which means I have a limited amount of time to learn to code. I wake up around 5:00 am and code until the time to leave for work. My morning study is not enough to get knowledge.  I want to code after work too. My brain is foggy after work but I need to keep my energy up every day. How??
 
 ## Healthy Habit
 ### You are what you eat:
-What I need is focus, energy and good spirit to keep myself up. I want to eat well. If my stomach is upset, I can't focus. If I overeat, I will get sleepy. If I drink a lot, I will hangover the next day. If my diet is a lack of nutrition, I will catch a cold. This kind of things is usually a waste of time beacause we need a certern time for its recoveries. So I want to keep away from bad habits. A good diet can also help to promote your overall health.
+What I need is focus, energy and good spirit to keep myself up. I want to eat well. If my stomach is upset, I can't focus. If I overeat, I will get sleepy. If I drink a lot, I will hangover the next day. If my diet is a lack of nutrition, I will catch a cold. This kind of things is usually a waste of time because we need a certain time for its recoveries. So I want to keep away from bad habits. A good diet can also help to promote your overall health.
 
 ### Exercise:
 It definitely helps to get clear thinking, change a mood and get fresh energy. I walk to work every day. I feel like it is not just good for your body but also for your mind - it is a kind of mindful walking. Science has shown walking can boost both your physical and mental health such as improving creativity, increasing blood flow in your brain and releasing endorphins etc. When I get stuck, I just walk around a bit or 5 minutes quick cardio workout also helps to clear my thought.
-  
+
 ### Blow your nose:
 What!? Blow your nose?? Yes!!! This is my doctor taught me when I caught a cold. Whenever I see him, he always talks with me about the benefit of "blowing your nose". We have to have a clear sinus and nasal passage in order to protect from infections. He recommends to blow my nose every 3 hours or so. You have to know how to blow your nose correctly to make sinus clear. (*Please google how to blow your nose). This became my new habit. Seriously. It helps and makes me feel good. Goodbye to the cold and flu.
 
@@ -29,7 +29,7 @@ I think how long you need to sleep is really depending on the person. Lack of sl
 Coding actually makes my brain awake so it is hard to relax. If I code at night and especially if I have a difficult time to solve the programming issue, my brain keeps chatting and it makes me difficult to relax. I found relaxing music such as music delta waves would help.
 
 ### Clean your room:
-Yes! Clean your room, get rid of clutter. 
+Yes! Clean your room, get rid of clutter.
 In Japan, there is a good concept called  "Danshari".
 > "Its three kanji characters signify, respectively, refusal, disposal, and separation. Prosaically it means cleaning or tidying up, but there are psychological and religious dimensions, deriving in part from yoga, which suggests the disposal of mental, along with physical, junk."
 
@@ -59,9 +59,4 @@ I code every day but at the same time, to make a plan to join socializing events
 I keep practicing how to love myself. You are your best friend. When you struggle and you are unhappy, you have to be always at your side. You have to believe yourself rather than waiting for somebody says that. Without making yourself happy, you can not give happiness to others. It is my daily practice.
 
 ## Conclusion
-I always ask myself what kind of things give my life happier. Coding every day is already my habit. Hard work always pays off. You get what you put in. So you need to stick at home on coding every day? Probably yes for a short time - or an intensive short-term course. But for the long term, to keep your life balance and to keep your motivation up are important.   I am learning self-discipline and finding who I am. It is important to know what makes you happy, what gives you focus and what kind of things boost your energy.  I highly recommend to know yourself deeply if you don't know that yet. I am sure this kind of lifestyle will even help after I complete my course. Coding is fun. It also gives me new habits and new lifestyle in my life. 
-
-
-
-
-
+I always ask myself what kind of things give my life happier. Coding every day is already my habit. Hard work always pays off. You get what you put in. So you need to stick at home on coding every day? Probably yes for a short time - or an intensive short-term course. But for the long term, to keep your life balance and your motivation up are important.  I am learning self-discipline and finding who I am. It is important to know what makes you happy, what gives you focus and what kind of things boost your energy.  I highly recommend to know yourself deeply if you don't know that yet. I am sure this kind of lifestyle will even help after I complete my course. Coding is fun. It also gives me new habits and new lifestyle in my life.
