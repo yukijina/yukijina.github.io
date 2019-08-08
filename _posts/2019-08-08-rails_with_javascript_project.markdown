@@ -18,7 +18,7 @@ permalink:  rails_with_javascript_project
 
 <p>Serialization and getting data available in JavaScript was interesting part for me. I want to make notes here for how to do it.</p>
 
-### 1. Add rails gem ActiveModel::Serializer to Gemfile
+## 1. Add rails gem ActiveModel::Serializer to Gemfile
 <p>We have to add the serializer gem in Gemfile.</p>
 `gem "active_model_serializers"`
 
@@ -26,14 +26,14 @@ permalink:  rails_with_javascript_project
 `bundle install`
 
 
-### 2. Generate serializer directly and files
+## 2. Generate serializer directly and files
 <p>Then we create a serializer file. We can generate in the terminal like:</p>
 `rails g serializer company`
 
-<p>We add table's name after `rails g serializer <your table name>`.<br>
-Then Rails creates a directly  `app/serializers` (if you does not have one) and a file `app/serializers/company_serializer.rb`. </p>
+<p>We add table name after `rails g serializer <your table name>`.</p>
+<p>Then Rails creates a directly `app/serializers` (if you does not have one) and a file `app/serializers/company_serializer.rb`. </p>
 
-### 3. Add attributes and association
+## 3. Add attributes and association
 <p>As you open the serializer file, `attributes :id` is already assigned as a default. We can add attributes we want to serialize.</p>
 
 <p>In my project, I want to use positions and users data that are associated with companies through JSON. To make this data available, I have to add an association `has_many :positions` in `app/serializer/company_serializer.rb` :</p>
@@ -62,7 +62,7 @@ end
 
 <p>We generate the serizlier for other tables as same as the above.</p>
 
-### 4. In controller,  make json response available
+## 4. In controller,  make json response available
 <p>In `index` method of `app/controllers/companies_controller.rb`, I need to add:</p>
 
 ```
@@ -79,7 +79,7 @@ end
 <p>Check JSON data trough API endpoint like `http: localhost:3000/companies.json`<br>
 Now we can see key/value pairs JSON on browser. It is your own internal API. That is pretty cool.</p>
 
-### 5. Access JSON through JavaScript
+## 5. Access JSON through JavaScript
 <p>Ruby part is done now. Now it's time to fetch JSON with JavaScript.<br>
 In JavaScript file, we need to get the data:</p>
 
@@ -98,7 +98,7 @@ function listeningCompaniesLoad() {
 <p>Fetch accesses HTTP pipeline such as requests and responses.</p>
 
 
-### 6. Create a class and render HTML through JavaScript.
+## 6. Create a class and render HTML through JavaScript.
 <p>Create a class and constructor, and assign JSON to property of the instance of the class.<br>
 By creating Object-Oriented-Programming in JavaScript, we can easily add function and render the desired HTML through JavaScript. </p>
 
@@ -125,5 +125,5 @@ class Company {
 
 <p>Once we create a class, we can add functions for an instance of a class and use or call the functions several times in another functions in JavaScript. That is super efficient and convenient. We can even add another trigger such as click button id in the HTML you just created and use this click event later.</p>
 
-### Conclusion
+## Conclusion
 <p>At the beginning, I thought it was much easier to render HTML through Ruby using the embedded ruby (file.html.erb). However by creating OOP in JavaScript, I learned there was another way to render HTML. We can create reusable functions, which we can call, use or add to another functions. It provides a dynamic movement in a browser. A web page is updated without refreshing the page  - Ajax call. Through this project, I feel great to know about how nicely both front and back-end work together. </p>
