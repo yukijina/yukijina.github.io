@@ -31,7 +31,7 @@ permalink:  rails_with_javascript_project
 `rails g serializer company`
 
 <p>We add table name after <code class="highlighter-rouge">rails g serializer your table name</code>.
-Then Rails creates a directly <code class="highlighter-rouge">app/serializers</code>(if you does not have one) and a file <code class="highlighter-rouge">app/serializers/company_serializer.rb</code>.</p>
+Then Rails creates a directly <code class="highlighter-rouge">app/serializers</code> (if you does not have one) and a file <code class="highlighter-rouge">app/serializers/company_serializer.rb</code>.</p>
 
 ## 3. Add attributes and association
 <p>As you open the serializer file, `attributes :id` is already assigned as a default. We can add attributes we want to serialize.</p>
