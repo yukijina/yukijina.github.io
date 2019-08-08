@@ -34,9 +34,9 @@ permalink:  rails_with_javascript_project
 Then Rails creates a directly <code class="highlighter-rouge">app/serializers</code> (if you does not have one) and a file <code class="highlighter-rouge">app/serializers/company_serializer.rb</code>.</p>
 
 ## 3. Add attributes and association
-<p>As you open the serializer file, <code class="highlighter-rouge">attributes:id</code> is already assigned as a default. We can add attributes we want to serialize.</p>
+<p>As you open the serializer file, attributes :id is already assigned as a default. We can add attributes we want to serialize.</p>
 
-<p>In my project, I want to use positions and users data that are associated with companies through JSON. To make this data available, I have to add an association <code class="highlighter-rouge">has_many :positions</code> in <code class="highlighter-rouge">app/serializer/company_serializer.rb</code> :</p>
+<p>In my project, I want to use positions and users data that are associated with companies through JSON. To make this data available, I have to add an association ```has_many :positions``` in <code class="highlighter-rouge">app/serializer/company_serializer.rb</code> :</p>
 
 
 ```
