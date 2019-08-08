@@ -34,9 +34,9 @@ permalink:  rails_with_javascript_project
 Then Rails creates a directly <code class="highlighter-rouge">app/serializers</code> (if you does not have one) and a file <code class="highlighter-rouge">app/serializers/company_serializer.rb</code>.</p>
 
 ## 3. Add attributes and association
-<p>As you open the serializer file, `attributes :id` is already assigned as a default. We can add attributes we want to serialize.</p>
+<p>As you open the serializer file, <code class="highlighter-rouge">attributes :id</code> is already assigned as a default. We can add attributes we want to serialize.</p>
 
-<p>In my project, I want to use positions and users data that are associated with companies through JSON. To make this data available, I have to add an association `has_many :positions` in `app/serializer/company_serializer.rb` :</p>
+<p>In my project, I want to use positions and users data that are associated with companies through JSON. To make this data available, I have to add an association <code class="highlighter-rouge">has_many :positions</code> in <code class="highlighter-rouge">app/serializer/company_serializer.rb</code> :</p>
 
 
 ```
@@ -48,8 +48,8 @@ end
 ```
 
 <p>We can generate another serializer file as same as company, such as: <br>
-`app/serializers/position_serializer.rb.`  <br>
-and add attribute (`:title`, `:description` `:salary`, `:full_time...`) an association `belons_to :company`  to the file.</p>
+<code class="highlighter-rouge">app/serializers/position_serializer.rb.</code><br>
+and add attribute (<code class="highlighter-rouge">:title</code>, <code class="highlighter-rouge">:description</code> <code class="highlighter-rouge">:salary</code>, <code class="highlighter-rouge">:full_time</code>...`) an association <code class="highlighter-rouge">belongs_to :company</code> to the file.</p>
 
 ```
 class PositionSerializer < ActiveModel::Serializer
@@ -58,12 +58,12 @@ class PositionSerializer < ActiveModel::Serializer
 end
 ```
 
-<p>This looks pretty much the same code as model. But when we have joint table, we don't need to use  `has_many XXX through XXX`. Instead, we can simply write `has_many XXX` (without through) and AMS takes care of the rest of things with model. </p>
+<p>This looks pretty much the same code as model. But when we have joint table, we don't need to use <code class="highlighter-rouge">has_many XXX through XXX</code>. Instead, we can simply write <code class="highlighter-rouge">has_many XXX</code> (without through) and AMS takes care of the rest of things with model. </p>
 
-<p>We generate the serizlier for other tables as same as the above.</p>
+<p>We generate the serializer for other tables as same as the above.</p>
 
 ## 4. In controller,  make json response available
-<p>In `index` method of `app/controllers/companies_controller.rb`, I need to add:</p>
+<p>In <code class="highlighter-rouge">index</code> method of <code class="highlighter-rouge">app/controllers/companies_controller.rb</code>, I need to add:</p>
 
 ```
 respond_to do |format|
@@ -72,11 +72,11 @@ respond_to do |format|
 end
 ```
 
-<p>The first line - `format.html  { render :index }` - tells if HTML is requested (default), render `index`. If the clients wants JSON response ,respond as JSON. `@companies`. It makes all company's attributes available as JSON.</p>
+<p>The first line - <code class="highlighter-rouge">format.html  { render :index }</code> - tells if HTML is requested (default), render <code class="highlighter-rouge">index</code>. If the clients wants JSON response ,respond as JSON. <code class="highlighter-rouge">@companies</code>. It makes all company's attributes available as JSON.</p>
 
 <p>We can add this not only in index but also in other methods.</p>
 
-<p>Check JSON data trough API endpoint like `http: localhost:3000/companies.json`<br>
+<p>Check JSON data trough API endpoint like <code class="highlighter-rouge">http: localhost:3000/companies.json`</code><br>
 Now we can see key/value pairs JSON on browser. It is your own internal API. That is pretty cool.</p>
 
 ## 5. Access JSON through JavaScript
@@ -102,7 +102,7 @@ function listeningCompaniesLoad() {
 <p>Create a class and constructor, and assign JSON to property of the instance of the class.<br>
 By creating Object-Oriented-Programming in JavaScript, we can easily add function and render the desired HTML through JavaScript. </p>
 
-```
+<code>"
 class Company {
   constructor(data) {
     this.id = data.id;
@@ -121,7 +121,7 @@ class Company {
       </div>
 		`
   }
-	```
+"</code>
 
 <p>Once we create a class, we can add functions for an instance of a class and use or call the functions several times in another functions in JavaScript. That is super efficient and convenient. We can even add another trigger such as click button id in the HTML you just created and use this click event later.</p>
 
