@@ -99,8 +99,8 @@ function listeningCompaniesLoad() {
 
 
 ## 6. Create a class and render HTML through JavaScript.
-<p>Create a class and constructor, and assign JSON to property of the instance of the class.<br>
-By creating Object-Oriented-Programming in JavaScript, we can easily add function and render the desired HTML through JavaScript. </p>
+<p>Create a class, and assign JSON to property of the instance of the class.<br>
+Class looks like an Object-Oriented-Programming in JavaScript but it is just syntax sugar. By creating the class, We can easily organize objects. We can add function and render the desired HTML through JavaScript. </p>
 
 ```
 class Company {
