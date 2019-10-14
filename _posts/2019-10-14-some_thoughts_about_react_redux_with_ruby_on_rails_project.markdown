@@ -15,16 +15,16 @@ I thought everything was working fine but once I reset the date, I realized the 
 After users click the submit, it goes through a fetch POST request and send the data to my rails backend API. The data is successfully posted but it can't be rendered when users goes to their page. But If users refresh the page, the data is displayed. So I need to refresh the page if I want to get the data I just created. But in our daily life, we won't refresh the page manually when we submit the form, right?? Somebody (my App) has to do it automatically. Hum, How can I this?
 
 
-1. There is a method in plain Javascript
+## There is a method in plain Javascript
  `window.location.reload()`
 
-According to MDN, >The Location.reload() method reloads the current URL, like the Refresh button.  ...   If true, the page is always reloaded from the server, bypassing the browser HTTP cache.
+According to MDN, >> The Location.reload() method reloads the current URL, like the Refresh button.  ...   If true, the page is always reloaded from the server, bypassing the browser HTTP cache.
 
 This sounds great for me. OK, it reloads the current URL. If we pass the argument `ture`, it reloads from the server. It means it fetches the data from rails.
 
 This is what I understand.
 
-So I put this method in the reducer. Just right after I posted user's review to rails, it will reload and users can get their favorites review and recipes from Redux state, which I already set up in advance. Also rails API has serializers, such as user `has_many :favorites` and `has_many :recipes` relationships so the reviews should be rendered.
+So I put this method in the reducer. Just right after I posted user's review to rails, it will reload and users can get their favorites review and recipes from Redux state, which I already set up in advance. Also rails API has serializers, such as user `has_many :favorites` and `has_many :recipes` relationships so the user's favorite recipes should be rendered.
 
 But after I put `window.location.reload(true)`, the routes goes back to my home route.... That's not what I wanted. It is not good UI if it always go back to the home page whenever users submit the form. Users should remain at the same page.
 
@@ -33,7 +33,7 @@ The reload may be blocked, probably same-origin-policy or simply it is not a goo
 So I decided to do another way.
 
 
-2. Get the data from rails API
+## Get the data from rails API
 I confirmed the data was successfully posted to the rails API once users submit the reviews. So why can I just get the data again? Just post and get that data.
 
 I know, I know.. sure, I can get the data. But I thought it might be an extra work compared to just refreshing the page. But anyway, I decided to do that.
@@ -103,8 +103,8 @@ class UserContainer extends Component {
 		.... do something
 ```
 
-Right here, I am invoking `loadingUserInfo()` with arguments. My app can successfully get user's favorite recipes after mounted but before rendered. That means I can display the result (all users reviews) in User's page.
+Right here, I am invoking `loadingUserInfo()` with arguments. My app can successfully get user's favorite recipes after mounted but before rendered. That means I can display the result (all users favorite recipes) in their own page.
 
-In React, it allows us to access that data we get the fetch call asynchronously. It happens very fast so it is important to keep in mind when and where the fetch is called and how and where we handle the data. It was hard to follow which part of data is rendered first but by placing debugger, redux dev tool, and adding console.log, finally I can see which function React is trying to call.
+In React, it allows us to access the data we got in the fetch call asynchronously. It happens very fast so it is important to keep in mind when and where the fetch is called and how and where we handle the data. It was hard to follow which part of data is rendered first but by placing debugger, redux dev tool, and adding console.log, finally I can see which function React is trying to call.
 
 Official React component Lifecycle [cheat sheet](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) also helps.
