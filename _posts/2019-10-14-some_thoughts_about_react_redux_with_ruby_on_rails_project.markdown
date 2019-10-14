@@ -33,13 +33,13 @@ The reload may be blocked, probably same-origin-policy or simply it is not a goo
 So I decided to do another way.
 
 
-## Get the data from rails API
+## Fetch the data from rails API
 I confirmed the data was successfully posted to the rails API once users submit the reviews. So why can I just get the data again? Just post and get that data.
 
 I know, I know.. sure, I can get the data. But I thought it might be an extra work compared to just refreshing the page. But anyway, I decided to do that.
 
 
-My React App
+### My React App
 `src/actions/userActions.js`
 
 ```
