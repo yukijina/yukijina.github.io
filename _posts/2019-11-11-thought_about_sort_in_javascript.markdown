@@ -44,7 +44,7 @@ But there is an exception. We need `localeCompare()` for unique characters. With
 How about a string? Remember, `sort()` is function for Array. So we need to convert a string to an array and get it back to a string agin after sorted.
 
 ### *sort strings
-`const string = "pomegranate"`
+`const string = "pomegranate"`<br>
 `string.split("").sort().join("")`
 `#result => “aaeeegmnoprt”`
 
@@ -68,7 +68,7 @@ Or one line:<br>
  
 
 
-Sort is a basic function in JavaScript. However it is a bit tricky to understand first how it works for numbers and strings. The function itself is for Array so that we can use it for strings by changing a string to an array - `split("")`.
+Sort is a basic function in JavaScript. However it is a bit tricky to understand how it works for numbers and strings. The function itself is for Array so that we can use it for a string by changing a string to an array - `split("")`.
 
 
 
