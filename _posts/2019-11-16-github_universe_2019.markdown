@@ -7,11 +7,11 @@ permalink:  github_universe_2019
 
 Git Hub Universe is a two-day event held at the Palace of Fine Art in San Francisco. It celebrates over 40 million developers and their contributions to the open source community.
 
-It was my first big tech event to attend. I was so excited and can’t express appreciation to the GitHub which somewhat sent me the event invitation (Thank you so much!)
+It was my first big tech event that I attended. I was so excited and can’t express appreciation to the GitHub which somewhat sent me the event invitation (Thank you so much!)
 
 ![GitHub Universe](http://yukijina.github.io/img/myimg/github-uni-1.jpg)
 
-Most interesting talks were keynotes. There were several exciting announcements such as:
+One of the most interesting talks was keynotes (Both Day 1 and Day 2). There were several exciting announcements such as:
 * GitHub Actions
 * GitHub Packages
 * GitHub for mobile
@@ -22,11 +22,11 @@ And so on.
 ![GitHub Universe](http://yukijina.github.io/img/myimg/github-uni-2.jpg)
 
 Also, GitHub announced GitHub Archive Program, which can preserve archived repositories in Svalbard, Norway. It lasts at least 1000 years for next future generations.
-Isn’t is nice our repositories are preserved at such a beautiful place?
+Isn’t it nice to know that our repositories are preserved at such a beautiful place?
 
 ![GitHub Universe](http://yukijina.github.io/img/myimg/github-uni-3.jpg)
 
-Thanks for all the demos and talks. It definitely gave me inspiration and motivation! I hope I can create or develop something visible or meaningful things in the near future. Also, I am so happy to say here that I completed my first open source project yesterday. It makes me so happy when my code was merged. Feels good!
+Thanks for all the demos and talks. It definitely gave me inspiration and motivation! Also, I am so happy to say here that I completed my first open source project in GitHub yesterday. I wasn't sure first where I can start and how to find the appropriate project but I am glad that I finally found the open source project which I can contribute. It makes me so happy when my code was merged. Feels good!
 
 
 
