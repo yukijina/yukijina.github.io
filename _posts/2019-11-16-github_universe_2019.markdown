@@ -24,8 +24,6 @@ And so on.
 Also, GitHub announced GitHub Archive Program, which can preserve archived repositories in Svalbard, Norway. It lasts at least 1000 years for next future generations.
 Isn’t it nice to know that our repositories are preserved at such a beautiful place?
 
-![GitHub Universe](http://yukijina.github.io/img/myimg/github-uni-3.jpg)
-
 Thanks for all the demos and talks. It definitely gave me inspiration and motivation! Also, I am so happy to say here that I completed my first open source project in GitHub yesterday. I wasn't sure first where I can start and how to find the appropriate project but I am glad that I finally found the open source project which I can contribute. It makes me so happy when my code was merged. Feels good!
 
 
