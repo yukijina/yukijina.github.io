@@ -12,7 +12,7 @@ I had thought about the contribution to the Open Source Projects for a while but
 ## How to find the project.
 There are a bunch of great websites about how to find the project which is right for you. Here is one of the links that are helpful. 
 
-https://github.com/freeCodeCamp/how-to-contribute-to-open-source
+<a href="https://github.com/firstcontributions/first-contributions">First Contributions by Git Hub</a>
 
 
 ## What is Open Source?
@@ -28,28 +28,32 @@ We can learn a lot of things from others. It is not only how to write a code but
 The reason I was away from open source contribution was I was afraid to break a code that other people already build. By forking and making changes in your own place, there is no such thing happened actually. It is a bit scary for the biginners if you don’t know how to use git commands so here is the basic commands!
 
 ### After you found your favorite project, fork the project.
-- Forck the project to your own place.
+- Fork the project to your own place
 Click `fork`
 
-- After forking, the screen changes to your repository. 
+![fork](http://yukijina.github.io/img/myimg/fork.jpg)
+
+- After forking, the screen changes to your repository<br>
 Click `clone or download` and copy the web URL.
 
-- In your terminal, paste the URL you have clip copied.
-` git clone GITHUB ADDRESS`
+![clone](http://yukijina.github.io/img/myimg/clone.jpg)
 
-- Move to the project directly.
+- In your terminal, paste the URL you have clip copied<br>
+`git clone GITHUB ADDRESS`
+
+- Move to the project directly<br>
 `cd  YOUR PROJECT NAME`
 
-- Create a branch and change to the branch (this command create branch and then move the newely created branch)
+- Create a branch (this command create branch and then move the newely created branch)<br>
 `git checkout -b BRANCH NAME`
 
-- Open your text editor and make some change
-`git add .`
-`git commit -m SOME COMMENTS`
-`git push -u origin BRANCH NAME`
+- Open your text editor and make some changes <br>
+`git add .`<br>
+`git commit -m SOME COMMENTS`<br>
+`git push -u origin BRANCH NAME`<br>
 
 Go back to your gitHub page and you will notice there is a pull request button.
-Click 
+Click `Compare & Pull request`
 
 Write some comments and request a pull
 
@@ -57,11 +61,12 @@ Wait, wait, wait..
 
 Once your submission was confirmed and if all looks good, it is going to be merged and your fist contribution is all done!
 
-You can safely delete the branch now.
+You can safely delete the branch now.<br>
 `git branch -d YOUR BRNACH NAME`
 
 
- I am so happy for the moment when my change was finally merged. Hope it helps and you feel the same!
+ I am so happy for the moment when my change was finally merged. 
+ Hope it helps and you feel happy about your contribution!!
  
 
  
