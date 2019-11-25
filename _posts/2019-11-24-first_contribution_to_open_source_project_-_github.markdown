@@ -12,7 +12,7 @@ I had thought about the contribution to the Open Source Projects for a while but
 ## How to find the project.
 There are a bunch of great websites about how to find the project which is right for you. Here is one of the links that are helpful. 
 
-<a href="https://github.com/firstcontributions/first-contributions">First Contributions by Git Hub</a>
+<a href="https://github.com/firstcontributions/first-contributions" target="_blank">First Contributions by GitHub</a>
 
 
 ## What is Open Source?
@@ -25,18 +25,18 @@ Connecting with other engineers makes me feel great and I am so happy to be a pa
 We can learn a lot of things from others. It is not only how to write a code but also the structures of the application. For beginners, it is definitely valuable.
 
 ## Quick basic guide of git commands
-The reason I was away from open source contribution was I was afraid to break a code that other people already build. By forking and making changes in your own place, there is no such thing happened actually. It is a bit scary for the biginners if you don’t know how to use git commands so here is the basic commands!
+The reason I was away from open source contribution was I was afraid to break a code that other people already build. By forking and making changes in your own place, that kind of things would not happen. It is a bit scary for the biginners if you don’t know how to use git commands so here is the basic commands!
 
 ### After you found your favorite project, fork the project.
-- Fork the project to your own place
+- Fork the project to your own place<br>
 Click `fork`
 
-![fork](http://yukijina.github.io/img/myimg/fork.jpg)
+![fork](http://yukijina.github.io/img/myimg/fork.png)
 
 - After forking, the screen changes to your repository<br>
 Click `clone or download` and copy the web URL.
 
-![clone](http://yukijina.github.io/img/myimg/clone.jpg)
+![clone](http://yukijina.github.io/img/myimg/clone.png)
 
 - In your terminal, paste the URL you have clip copied<br>
 `git clone GITHUB ADDRESS`
@@ -47,7 +47,7 @@ Click `clone or download` and copy the web URL.
 - Create a branch (this command create branch and then move the newely created branch)<br>
 `git checkout -b BRANCH NAME`
 
-- Open your text editor and make some changes <br>
+- Open your text editor and make some changes. After changes and if all looks good, <br>
 `git add .`<br>
 `git commit -m SOME COMMENTS`<br>
 `git push -u origin BRANCH NAME`<br>
@@ -55,7 +55,7 @@ Click `clone or download` and copy the web URL.
 Go back to your gitHub page and you will notice there is a pull request button.
 Click `Compare & Pull request`
 
-Write some comments and request a pull
+Write some comments and create a pull request.
 
 Wait, wait, wait..
 
@@ -66,7 +66,7 @@ You can safely delete the branch now.<br>
 
 
  I am so happy for the moment when my change was finally merged. 
- Hope it helps and you feel happy about your contribution!!
+ Hope it helps and you feel the same - happy for your contribution!!
  
 
  
